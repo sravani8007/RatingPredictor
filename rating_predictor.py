@@ -28,10 +28,10 @@ class ReusableForm(Form):
         #print name
 
         if form.validate():
-            with open('/home/sravanisuravajhula/mysite/log_reg.pkl','rb') as f_log_reg:
+            with open('log_reg.pkl','rb') as f_log_reg:
                 log_reg=pickle.load(f_log_reg)
 
-            with open('/home/sravanisuravajhula/mysite/vocabulary.pkl','rb') as f_vocabulary:
+            with open('vocabulary.pkl','rb') as f_vocabulary:
                 vocabulary=pickle.load(f_vocabulary)
 
             vector=TfidfVectorizer(vocabulary=vocabulary)
