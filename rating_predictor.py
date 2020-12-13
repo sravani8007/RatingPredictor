@@ -47,7 +47,7 @@ class ReusableForm(Form):
             flash(str(int(results[0])))
 
         else:
-            flash('Error: Movie name is required ')
+            flash('Error: Game Review is required ')
 
         return render_template('rating_predictor.html', form=form)
 
