@@ -6,27 +6,45 @@ Stepts to Run in a local Machine:
 
 1. Install Python3
 
-2. Install the following python libraries
-
-   conda env create -f environment.yml
-   
-   a. Flask
-   b. Sklearn
-   c. pandas
-   d. numpy
-   e. WTForms
-   
-3. Clone the project using below command
+2. Clone the project using below command
 
    git clone https://github.com/sravani8007/RatingPredictor.git
-
-
-4. Change the directory to RatingPredictor
+   
+    
+3. Change the directory to RatingPredictor
 
    cd RatingPredictor
 
-5. python3 rating_predictor.py
+4. Install the following python libraries
 
-5. Open the local host link
+   a. Flask
+   
+   b. Sklearn
+   
+   c. pandas
+   
+   d. numpy
+   
+   e. WTForms
+   
+   This can be done using a seperate environment using the environment yml file as below
+   
+   conda env create -f environment.yml
+   conda activate rating
+   
+   or 
+   
+   Use the requiremets.txt as below
+   
+   pip install -r requirements.txt
 
-6. TO test it on the hosted server try : http://sravanisuravajhula.pythonanywhere.com/
+
+5. Run the app using the below command
+
+   python rating_predictor.py
+
+6. Open the local host link  
+
+7. Give a review and press the submit button
+
+8. To test it on the hosted server try : http://sravanisuravajhula.pythonanywhere.com/
