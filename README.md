@@ -29,7 +29,7 @@ Stepts to Run in a local Machine:
    
    This can be done using a seperate environment using the environment yml file as below
    
-   conda env create -f environment.yml
+   conda env create -f env.yml
    conda activate rating
    
    or 
